@@ -107,12 +107,10 @@ public class DownloadFileCommand implements ICommand {
 		int pos = args.indexOf(mode);
 		if (pos == -1) {
 			return ErrorType.ARGUMENTS_ILLEGAL;
-		}
-		else if (pos == args.size() - 1) {
+		} else if (pos == args.size() - 1) {
 			System.out.println("please input the path to redirect the file");
 			return ErrorType.SUCCESS;
-		}
-		else if (pos != args.size() - 2) {
+		} else if (pos != args.size() - 2) {
 			return ErrorType.ARGUMENTS_ILLEGAL;
 		}
 
