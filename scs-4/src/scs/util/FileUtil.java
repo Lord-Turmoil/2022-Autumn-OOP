@@ -84,7 +84,6 @@ public class FileUtil {
 	}
 	private static void deleteFile(String filename) {
 		File file = new File(filename);
-		//路径是个文件且不为空时删除文件
 		if (file.isFile() && file.exists()) {
 			file.delete();
 		}
